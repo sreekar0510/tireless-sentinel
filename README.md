@@ -1,6 +1,10 @@
 # 🛡️ Tireless Sentinel
 
-> Autonomous UI testing agent with AI-powered self-healing, application memory, business validation, and automated test generation.
+**Autonomous UI Testing Agent with AI Self-Healing, Application Memory & Business Validation**
+
+[![Node.js](https://img.shields.io/badge/Node.js-24-green)](https://nodejs.org/)
+[![Playwright](https://img.shields.io/badge/Playwright-Automation-blue)](https://playwright.dev/)
+[![Gemini](https://img.shields.io/badge/Gemini-AI%20Recovery-purple)](https://ai.google.dev/)
 
 Tireless Sentinel is an autonomous browser testing system built with Playwright and Gemini.
 

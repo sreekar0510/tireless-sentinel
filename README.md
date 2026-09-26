@@ -26,6 +26,29 @@ Instead of relying entirely on brittle CSS selectors, it understands the **busin
 
 ---
 
+## 🖥️ Demo / Screenshots
+
+### 📊 Dashboard
+
+<img width="1470" height="791" alt="dashboard1" src="https://github.com/user-attachments/assets/7573ffcb-6574-4912-ad08-814010e929d7" />
+
+### 🤖 AI Self-Healing
+
+<img width="1470" height="956" alt="Screenshot 2026-09-27 at 3 45 12 AM" src="https://github.com/user-attachments/assets/4f6081d9-5933-4533-975c-d2a2467dd0e1" />
+
+### 🧠 Memory-Based Recovery
+
+<img width="1470" height="956" alt="Screenshot 2026-09-27 at 3 45 58 AM" src="https://github.com/user-attachments/assets/293a6f7c-9c0a-469b-9eff-62ccd24250a7" />
+
+### 🐛 Business Bug Detection
+
+<img width="1470" height="956" alt="Screenshot 2026-09-27 at 3 46 38 AM" src="https://github.com/user-attachments/assets/36421106-170a-4bb3-9624-1988537a6ba3" />
+
+
+
+
+
+
 ## 🧠 How It Works
 
 ```text

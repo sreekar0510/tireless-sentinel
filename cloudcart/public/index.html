@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CloudCart</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+
+    header {
+      background: #111827;
+      color: white;
+      padding: 18px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .cart-button {
+      background: white;
+      color: #111827;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .hero {
+      margin-bottom: 30px;
+    }
+
+    .hero h1 {
+      margin-bottom: 8px;
+    }
+
+    .search-box {
+      display: flex;
+      gap: 10px;
+      margin: 20px 0 30px;
+    }
+
+    .search-box input {
+      flex: 1;
+      padding: 14px;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    .search-box button,
+    .product button,
+    .checkout button {
+      background: #111827;
+      color: white;
+      border: none;
+      padding: 12px 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .product {
+      background: white;
+      padding: 25px;
+      border-radius: 14px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      max-width: 400px;
+    }
+
+    .product h2 {
+      margin-top: 0;
+    }
+
+    .price {
+      font-size: 22px;
+      font-weight: bold;
+      margin: 15px 0;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .cart,
+    .checkout,
+    .confirmation {
+      background: white;
+      padding: 30px;
+      border-radius: 14px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    .success {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">🛒 CloudCart</div>
+
+    <button class="cart-button" id="cart-button">
+      Cart (<span id="cart-count">0</span>)
+    </button>
+  </header>
+
+  <main>
+
+    <!-- SHOP -->
+    <section id="shop-section">
+
+      <div class="hero">
+        <h1>Welcome to CloudCart</h1>
+        <p>Simple shopping, powered by a reliable checkout.</p>
+      </div>
+
+      <div class="search-box">
+        <input
+          id="search-input"
+          type="text"
+          placeholder="Search products..."
+        />
+
+        <button id="search-button">
+          Search
+        </button>
+      </div>
+
+      <div
+        class="product"
+        id="product-card"
+        data-price="29999"
+      >
+
+        <h2 id="product-name">
+          Sony WH-1000XM6 Headphones
+        </h2>
+
+        <p>
+          Premium wireless noise-cancelling headphones.
+        </p>
+
+        <div class="price">
+          ₹29,999
+        </div>
+
+        <button id="add-to-cart">
+          Add to Cart
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- CART -->
+    <section id="cart-section" class="hidden">
+
+      <div class="cart">
+
+        <h1>Your Cart</h1>
+
+        <p id="cart-product">
+          Sony WH-1000XM6 Headphones × 1
+        </p>
+
+        <p>
+          Total:
+          <strong id="cart-total">
+            ₹29,999
+          </strong>
+        </p>
+
+        <button id="checkout-button">
+          Checkout
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- CHECKOUT -->
+    <section id="checkout-section" class="hidden">
+
+      <div class="checkout">
+
+        <h1>Checkout</h1>
+
+        <p>Please confirm your order.</p>
+
+        <p>
+          Total:
+          <strong id="checkout-total">
+            ₹29,999
+          </strong>
+        </p>
+
+        <button id="place-order">
+          Place Order
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONFIRMATION -->
+    <section id="confirmation-section" class="hidden">
+
+      <div class="confirmation">
+
+        <div class="success">
+          ✅ Order confirmed!
+        </div>
+
+        <p>
+          Your order has been successfully placed.
+        </p>
+
+        <p>
+          Order ID:
+          <strong id="order-id">
+            CC-20260926-001
+          </strong>
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="/app.js"></script>
+
+</body>
+</html>

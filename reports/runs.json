@@ -1,0 +1,81 @@
+[
+  {
+    "scenario": "baseline",
+    "status": "PASS",
+    "businessValidation": "PASS",
+    "originalSelector": "#place-order",
+    "recoveredSelector": null,
+    "recoverySource": "none",
+    "modelCalls": 0,
+    "durationMs": 2886,
+    "timestamp": "2026-09-26T12:54:15.699Z"
+  },
+  {
+    "scenario": "ui-change",
+    "status": "HEALED",
+    "businessValidation": "PASS",
+    "originalSelector": "#place-order",
+    "recoveredSelector": "#complete-purchase",
+    "recoverySource": "ai",
+    "modelCalls": 1,
+    "durationMs": 10342,
+    "timestamp": "2026-09-26T21:45:28.943Z"
+  },
+  {
+    "scenario": "ui-change",
+    "status": "HEALED",
+    "businessValidation": "PASS",
+    "originalSelector": "#place-order",
+    "recoveredSelector": "#complete-purchase",
+    "recoverySource": "memory",
+    "modelCalls": 0,
+    "durationMs": 5980,
+    "timestamp": "2026-09-26T21:47:36.600Z"
+  },
+  {
+    "scenario": "bug",
+    "status": "BUG",
+    "businessValidation": "FAIL",
+    "expectedTotal": 29999,
+    "actualTotal": 299990,
+    "healing": "REJECTED",
+    "recoverySource": "none",
+    "modelCalls": 0,
+    "durationMs": 1940,
+    "timestamp": "2026-09-26T12:54:53.073Z"
+  },
+  {
+    "scenario": "bug",
+    "status": "BUG",
+    "businessValidation": "FAIL",
+    "expectedTotal": 29999,
+    "actualTotal": 299990,
+    "healing": "REJECTED",
+    "recoverySource": "none",
+    "modelCalls": 0,
+    "durationMs": 3078,
+    "timestamp": "2026-09-26T21:51:11.988Z"
+  },
+  {
+    "scenario": "baseline",
+    "status": "PASS",
+    "businessValidation": "PASS",
+    "originalSelector": "#place-order",
+    "recoveredSelector": null,
+    "recoverySource": "none",
+    "modelCalls": 0,
+    "durationMs": 667,
+    "timestamp": "2026-09-26T21:54:43.766Z"
+  },
+  {
+    "scenario": "baseline",
+    "status": "PASS",
+    "businessValidation": "PASS",
+    "originalSelector": "#place-order",
+    "recoveredSelector": null,
+    "recoverySource": "none",
+    "modelCalls": 0,
+    "durationMs": 642,
+    "timestamp": "2026-09-26T21:55:01.163Z"
+  }
+]

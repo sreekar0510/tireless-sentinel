@@ -1,0 +1,70 @@
+[
+  {
+    "scenario": "baseline",
+    "status": "PASS",
+    "businessValidation": "PASS",
+    "originalSelector": "#place-order",
+    "recoveredSelector": null,
+    "recoverySource": "none",
+    "modelCalls": 0,
+    "durationMs": 3037,
+    "timestamp": "2026-09-26T11:57:02.504Z"
+  },
+  {
+    "scenario": "ui-change",
+    "status": "HEALED",
+    "businessValidation": "PASS",
+    "originalSelector": "#place-order",
+    "recoveredSelector": "#complete-purchase",
+    "recoverySource": "memory",
+    "modelCalls": 0,
+    "durationMs": 4915,
+    "timestamp": "2026-09-26T11:57:21.386Z"
+  },
+  {
+    "scenario": "bug",
+    "status": "BUG",
+    "businessValidation": "FAIL",
+    "expectedTotal": 29999,
+    "actualTotal": 299990,
+    "healing": "REJECTED",
+    "recoverySource": "none",
+    "modelCalls": 0,
+    "durationMs": 2154,
+    "timestamp": "2026-09-26T11:57:39.617Z"
+  },
+  {
+    "scenario": "baseline",
+    "status": "PASS",
+    "businessValidation": "PASS",
+    "originalSelector": "#place-order",
+    "recoveredSelector": null,
+    "recoverySource": "none",
+    "modelCalls": 0,
+    "durationMs": 4745,
+    "timestamp": "2026-09-26T12:31:58.308Z"
+  },
+  {
+    "scenario": "bug",
+    "status": "BUG",
+    "businessValidation": "FAIL",
+    "expectedTotal": 29999,
+    "actualTotal": 299990,
+    "healing": "REJECTED",
+    "recoverySource": "none",
+    "modelCalls": 0,
+    "durationMs": 2282,
+    "timestamp": "2026-09-26T12:32:48.299Z"
+  },
+  {
+    "scenario": "baseline",
+    "status": "PASS",
+    "businessValidation": "PASS",
+    "originalSelector": "#place-order",
+    "recoveredSelector": null,
+    "recoverySource": "none",
+    "modelCalls": 0,
+    "durationMs": 1517,
+    "timestamp": "2026-09-26T12:32:54.580Z"
+  }
+]
